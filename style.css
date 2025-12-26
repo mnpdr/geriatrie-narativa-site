@@ -8,19 +8,20 @@
    ------------------------------ */
 
 :root {
-  --verde-salvie: #6f9e8b;
-  --albastru-linistit: #1a4f7a; /* pentru linkuri */
-  --bej-cald: #fff7eb;
+  --verde-salvie: #7faf9a;          /* accent, header */
+  --albastru-linistit: #2f4f4f;     /* linkuri, text accent */
+  --bej-cald: #f3e8d2;              /* fundal secțiuni */
   --gri-perlat: #d5d5d5;
   --roz-prafuit: #c9a3a3;
   --auriu-pal: #c9a86a;
-  --gri-antracit: #2a2a2a;
-  --bleumarin-profund: #1a2e40;
+  --gri-antracit: #2f2f2f;          /* text secundar */
+  --bleumarin-profund: #2f4f4f;     /* text principal, titluri */
 
   --font-titlu: "Playfair Display", serif;
   --font-subtitlu: "Lora", serif;
   --font-text: "Source Sans Pro", sans-serif;
 }
+
 
 /* ------------------------------
    2. RESET & BAZĂ
