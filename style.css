@@ -8,14 +8,14 @@
    ------------------------------ */
 
 :root {
-  --verde-salvie: #7faf9a;          /* accent, header */
-  --albastru-linistit: #2f4f4f;     /* linkuri, text accent */
-  --bej-cald: #f3e8d2;              /* fundal secțiuni */
+  --verde-salvie: #f4a261;          /* accent piersică */
+  --albastru-linistit: #0f4c5c;     /* linkuri, titluri, text */
+  --bej-cald: #faf3e0;              /* fundal secțiuni */
   --gri-perlat: #d5d5d5;
-  --roz-prafuit: #c9a3a3;
-  --auriu-pal: #c9a86a;
-  --gri-antracit: #2f2f2f;          /* text secundar */
-  --bleumarin-profund: #2f4f4f;     /* text principal, titluri */
+  --roz-prafuit: #e9b5a3;           /* accente calde */
+  --auriu-pal: #e9c46a;             /* accente opționale */
+  --gri-antracit: #1a1a1a;          /* text secundar */
+  --bleumarin-profund: #0f4c5c;     /* text principal */
 
   --font-titlu: "Playfair Display", serif;
   --font-subtitlu: "Lora", serif;
@@ -441,3 +441,4 @@ nav a.active {
     font-size: 1.6rem;
   }
 }
+
