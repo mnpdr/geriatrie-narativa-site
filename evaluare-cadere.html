@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evaluare risc de cădere – Geriatrie & Gerontologie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-area">
+      <div class="logo-symbol">G</div>
+      <div class="logo-text">
+        <h1>Geriatria și Gerontologia</h1>
+        <p class="header-subtitle">îngrijire cu suflet și înțelegere</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="index.html#despre-noi">Despre noi</a></li>
+        <li><a href="index.html#servicii">Servicii</a></li>
+        <li><a href="interpretare-analize.html">Interpretare analize</a></li>
+        <li><a href="articole.html">Articole</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="evaluare-cadere.html" class="active">Evaluare risc cădere</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h2 class="page-title">Evaluare a riscului de cădere</h2>
+    <p class="page-subtitle">
+      Completați acest chestionar pentru a identifica posibili factori de risc.  
+      Interpretarea finală se face doar în cadrul consultației.
+    </p>
+  </div>
+</section>
+
+<!-- FORMULAR -->
+<section class="section section-light">
+  <div class="container">
+
+    <form class="contact-form">
+
+      <label>1. Ați avut vreo cădere în ultimele 12 luni?</label>
+      <select>
+        <option>Nu</option>
+        <option>Da, o singură dată</option>
+        <option>Da, de mai multe ori</option>
+      </select>
+
+      <label>2. Vă simțiți nesigur(ă) atunci când mergeți?</label>
+      <select>
+        <option>Nu</option>
+        <option>Uneori</option>
+        <option>Da, frecvent</option>
+      </select>
+
+      <label>3. Aveți amețeli sau pierderi de echilibru?</label>
+      <select>
+        <option>Nu</option>
+        <option>Ocazional</option>
+        <option>Da, des</option>
+      </select>
+
+      <label>4. Folosiți baston, cadru sau alt dispozitiv de mers?</label>
+      <select>
+        <option>Nu</option>
+        <option>Da, uneori</option>
+        <option>Da, în mod constant</option>
+      </select>
+
+      <label>5. Luați medicamente care pot provoca amețeală?</label>
+      <select>
+        <option>Nu</option>
+        <option>Nu știu</option>
+        <option>Da</option>
+      </select>
+
+      <label>6. Aveți probleme de vedere?</label>
+      <select>
+        <option>Nu</option>
+        <option>Ușoare</option>
+        <option>Semnificative</option>
+      </select>
+
+      <label>7. Vă simțiți slăbit(ă) sau aveți dificultăți la ridicare?</label>
+      <select>
+        <option>Nu</option>
+        <option>Uneori</option>
+        <option>Da, des</option>
+      </select>
+
+      <label>8. Aveți obstacole în casă (covorașe, praguri, iluminare slabă)?</label>
+      <select>
+        <option>Nu</option>
+        <option>Unele</option>
+        <option>Da, multe</option>
+      </select>
+
+      <label>9. Aveți dureri la picioare, genunchi sau șolduri?</label>
+      <select>
+        <option>Nu</option>
+        <option>Ocazional</option>
+        <option>Da, frecvent</option>
+      </select>
+
+      <label>10. Vă simțiți anxios/anxioasă în legătură cu mersul?</label>
+      <select>
+        <option>Nu</option>
+        <option>Uneori</option>
+        <option>Da</option>
+      </select>
+
+      <button type="submit" class="btn-primary" style="margin-top:1.5rem;">
+        Trimite chestionarul
+      </button>
+
+	<div style="text-align:center; margin-top:2rem;">
+		<a href="evaluare-cadere-extinsa.html" class="btn-primary">
+			Vreau evaluarea extinsă (contra cost)
+		</a>
+	</div>
+
+    </form>
+
+    <p class="gdpr-note">
+      Acest formular are rol informativ. Interpretarea finală se face doar în cadrul consultației online sau la cabinet.
+    </p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Geriatrie &amp; Gerontologie – Îngrijire cu suflet.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
