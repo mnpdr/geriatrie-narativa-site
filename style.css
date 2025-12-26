@@ -124,6 +124,16 @@ p {
   font-size: 1.1rem;
 }
 
+.header-subtitle {
+  font-family: var(--font-subtitlu);
+  font-size: 26px;              /* vizibil pentru vârstnici */
+  line-height: 1.4;
+  color: #ffffff;               /* alb, pentru contrast în header */
+  font-weight: 600;
+  margin-top: 0.3rem;
+  max-width: 500px;
+}
+
 .logo-text p {
   font-family: var(--font-subtitlu);
   font-size: 0.8rem;
