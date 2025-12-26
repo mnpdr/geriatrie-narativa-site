@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------
    STYLE.CSS — Geriatrie & Gerontologie – Medicina Narativă
-   Design cald, empatic, profesionist
+   Design accesibil, contrast puternic, lizibil pentru vârstnici
    --------------------------------------------------------- */
 
 /* ------------------------------
@@ -8,20 +8,19 @@
    ------------------------------ */
 
 :root {
-  --verde-salvie: #f4a261;          /* accent piersică */
-  --albastru-linistit: #0f4c5c;     /* linkuri, titluri, text */
-  --bej-cald: #faf3e0;              /* fundal secțiuni */
+  --verde-salvie: #5faf97;          /* accent saturat */
+  --albastru-linistit: #0b3c49;     /* text, titluri, butoane */
+  --bej-cald: #fff4e6;              /* fundal secțiuni */
   --gri-perlat: #d5d5d5;
-  --roz-prafuit: #e9b5a3;           /* accente calde */
-  --auriu-pal: #e9c46a;             /* accente opționale */
+  --roz-prafuit: #e9b5a3;
+  --auriu-pal: #e9c46a;
   --gri-antracit: #1a1a1a;          /* text secundar */
-  --bleumarin-profund: #0f4c5c;     /* text principal */
+  --bleumarin-profund: #0b3c49;     /* text principal */
 
   --font-titlu: "Playfair Display", serif;
   --font-subtitlu: "Lora", serif;
   --font-text: "Source Sans Pro", sans-serif;
 }
-
 
 /* ------------------------------
    2. RESET & BAZĂ
@@ -34,10 +33,10 @@
 }
 
 body {
-   font-family: var(--font-text);
-  font-size: 22px;          /* MĂRIT pentru vizibilitate */
-  line-height: 1.8;         /* Spațiere mai aerisită */
-  color: var(--bleumarin-profund);  /* Contrast mai bun */
+  font-family: var(--font-text);
+  font-size: 24px;
+  line-height: 1.85;
+  color: var(--bleumarin-profund);
   background-color: #ffffff;
 }
 
@@ -47,7 +46,7 @@ img {
 }
 
 a {
-  color: #1a4f7a;
+  color: var(--verde-salvie);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -58,28 +57,29 @@ a {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+/* TITLURI */
+
 h1 {
-  font-size: 44px;
-  color: var(--bleumarin-profund);
+  font-size: 48px;
   font-family: var(--font-titlu);
-  margin-bottom: 1rem;
+  color: var(--bleumarin-profund);
 }
 
 h2 {
-  font-size: 34px;
-  color: var(--bleumarin-profund);
+  font-size: 38px;
   font-family: var(--font-titlu);
-  margin-bottom: 0.8rem;
+  color: var(--bleumarin-profund);
 }
 
 h3 {
-  font-size: 26px;
-  color: var(--bleumarin-profund);
+  font-size: 30px;
   font-family: var(--font-subtitlu);
-  margin-bottom: 0.6rem;
+  color: var(--bleumarin-profund);
 }
+
 p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
 }
 
 /* ------------------------------
@@ -107,44 +107,33 @@ p {
 }
 
 .logo-symbol {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-titlu);
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.logo-text h1 {
-  font-family: var(--font-titlu);
-  font-size: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .header-subtitle {
   font-family: var(--font-subtitlu);
-  font-size: 26px;              /* vizibil pentru vârstnici */
+  font-size: 26px;
   line-height: 1.4;
-  color: #ffffff;               /* alb, pentru contrast în header */
+  color: #ffffff;
   font-weight: 600;
   margin-top: 0.3rem;
   max-width: 500px;
 }
 
-.logo-text p {
-  font-family: var(--font-subtitlu);
-  font-size: 0.8rem;
-  opacity: 0.9;
-}
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  font-weight: 600;
+  gap: 1.2rem;
+  font-weight: 700;
 }
 
 nav a {
@@ -158,72 +147,67 @@ nav a.active {
 }
 
 /* ------------------------------
-   4. HERO & PAGINI
+   4. HERO
    ------------------------------ */
 
 .hero {
-  background: linear-gradient(
-    160deg,
-    rgba(143, 175, 158, 0.12),
-    rgba(232, 220, 197, 0.9)
-  );
-  padding: 3.5rem 0 3rem;
+  background-color: var(--bej-cald);
+  padding: 4rem 0;
 }
 
 .hero-inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .hero-text h2 {
-  font-family: var(--font-titlu);
-  font-size: 2rem;
-  color: var(--bleumarin-profund);
-  margin-bottom: 0.8rem;
+  font-size: 42px;
+  margin-bottom: 1rem;
 }
 
 .hero-text p {
   font-family: var(--font-subtitlu);
-  margin-bottom: 1.2rem;
+  font-size: 26px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--bleumarin-profund);
+  margin-bottom: 1.8rem;
 }
+
+/* BUTOANE */
 
 .btn-primary,
 .btn-outline {
-  display: inline-block;
-  padding: 0.7rem 1.3rem;
-  border-radius: 999px;
-  font-weight: 600;
+  font-size: 24px;
+  padding: 1.1rem 1.8rem;
+  border-radius: 14px;
+  font-weight: 700;
   cursor: pointer;
   transition: 0.2s ease;
 }
 
+/* Buton principal */
 .btn-primary {
-  background-color: #1a4f7a;
-  color: #ffffff;
-  font-size: 22px;
-  padding: 1rem 1.6rem;
-  border-radius: 12px;
-  font-weight: 700;
-
+  background-color: var(--auriu-pal);
+  color: var(--bleumarin-profund);
+  border: 3px solid var(--auriu-pal);
 }
 
 .btn-primary:hover {
-  background-color: #1f2c3b;
+  background-color: #d4a84f;
 }
 
+/* Buton contur */
 .btn-outline {
-  border: 3px solid #1a4f7a;
-  color: #1a4f7a;
-  font-size: 22px;
-  padding: 1rem 1.6rem;
-  border-radius: 12px;
-  font-weight: 700;
+  background-color: transparent;
+  border: 3px solid var(--bleumarin-profund);
+  color: var(--bleumarin-profund);
 }
 
 .btn-outline:hover {
-  background-color: rgba(46, 64, 87, 0.05);
+  background-color: rgba(11, 60, 73, 0.08);
 }
 
 /* ------------------------------
@@ -231,23 +215,23 @@ nav a.active {
    ------------------------------ */
 
 .section {
-  padding: 3rem 0;
+  padding: 3.5rem 0;
 }
 
 .section-light {
-  background-color: #fdfaf5;
+  background-color: var(--bej-cald);
 }
 
 .section-alt {
-  background-color: #f5efe7;
+  background-color: #ffffff;
 }
 
 .section-title {
   font-family: var(--font-titlu);
-  font-size: 1.6rem;
+  font-size: 38px;
   color: var(--bleumarin-profund);
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-subtitle {
@@ -263,25 +247,22 @@ nav a.active {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .card {
   background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.2rem;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 14px;
+  padding: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  font-size: 22px;
+  line-height: 1.6;
 }
 
 .card h4 {
   font-family: var(--font-subtitlu);
-  margin-bottom: 0.6rem;
-}
-
-.card ul {
-  margin-left: 1rem;
-  list-style: disc;
+  margin-bottom: 0.8rem;
 }
 
 /* ------------------------------
@@ -290,135 +271,85 @@ nav a.active {
 
 .page-hero {
   background-color: var(--bej-cald);
-  padding: 2.5rem 0;
+  padding: 3rem 0;
   text-align: center;
 }
 
 .page-title {
   font-family: var(--font-titlu);
-  font-size: 2rem;
+  font-size: 42px;
   color: var(--bleumarin-profund);
 }
 
 .page-subtitle {
   font-family: var(--font-subtitlu);
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
-/* Steps */
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.step {
-  background-color: #ffffff;
-  padding: 1.2rem;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
-
-.step h4 {
-  font-family: var(--font-subtitlu);
-  margin-bottom: 0.5rem;
-}
-
-/* Pricing */
-
-.pricing {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.price-card {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  width: 260px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.price {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: var(--bleumarin-profund);
-  margin-top: 0.5rem;
-}
-
-/* Formular */
+/* ------------------------------
+   8. FORMULAR
+   ------------------------------ */
 
 .contact-form {
   background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   max-width: 600px;
   margin: 0 auto;
 }
 
 .contact-form label {
   display: block;
-  margin-top: 1rem;
-  font-weight: 600;
+  margin-top: 1.2rem;
+  font-weight: 700;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.6rem;
-  border-radius: 6px;
+  padding: 0.8rem;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  margin-top: 0.3rem;
+  margin-top: 0.4rem;
+  font-size: 20px;
 }
 
 .contact-form button {
-  margin-top: 1.2rem;
+  margin-top: 1.6rem;
   width: 100%;
-  padding: 0.8rem;
-  border-radius: 999px;
+  padding: 1rem;
+  border-radius: 14px;
   border: none;
   background-color: var(--bleumarin-profund);
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 24px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #1f2c3b;
-}
-
-.gdpr-note {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  opacity: 0.8;
+  background-color: #072f3a;
 }
 
 /* ------------------------------
-   8. FOOTER
+   9. FOOTER
    ------------------------------ */
 
 .site-footer {
   background-color: var(--bleumarin-profund);
   color: #ffffff;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   margin-top: 3rem;
 }
 
 .footer-inner {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 20px;
 }
 
 /* ------------------------------
-   9. RESPONSIVE
+   10. RESPONSIVE
    ------------------------------ */
 
 @media (max-width: 800px) {
@@ -437,8 +368,7 @@ nav a.active {
 }
 
 @media (max-width: 480px) {
-  .page-title {
-    font-size: 1.6rem;
-  }
+  h1 { font-size: 38px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 26px; }
 }
-
