@@ -8,14 +8,12 @@
    ------------------------------ */
 
 :root {
-  --verde-salvie: #5faf97;          /* accent saturat */
-  --albastru-linistit: #0b3c49;     /* text, titluri, butoane */
-  --bej-cald: #fff4e6;              /* fundal secțiuni */
-  --gri-perlat: #d5d5d5;
-  --roz-prafuit: #e9b5a3;
-  --auriu-pal: #e9c46a;
-  --gri-antracit: #1a1a1a;          /* text secundar */
-  --bleumarin-profund: #0b3c49;     /* text principal */
+  --albastru-petrol: #0b3c49;      /* header, titluri, text principal */
+  --verde-inchis: #2f5f4f;         /* accente, carduri */
+  --galben-mustar: #e9c46a;        /* butoane, borduri */
+  --crem-cald: #fff4e6;            /* fundaluri */
+  --alb: #ffffff;
+  --gri-inchis: #1a1a1a;
 
   --font-titlu: "Playfair Display", serif;
   --font-subtitlu: "Lora", serif;
@@ -36,8 +34,8 @@ body {
   font-family: var(--font-text);
   font-size: 24px;
   line-height: 1.85;
-  color: var(--bleumarin-profund);
-  background-color: #ffffff;
+  color: var(--albastru-petrol);
+  background-color: var(--alb);
 }
 
 img {
@@ -46,7 +44,7 @@ img {
 }
 
 a {
-  color: var(--verde-salvie);
+  color: var(--verde-inchis);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -57,6 +55,7 @@ a {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
 
 /* TITLURI */
 
@@ -87,46 +86,49 @@ p {
    ------------------------------ */
 
 .site-header {
-  background: linear-gradient(120deg, var(--verde-salvie), var(--bej-cald));
-  color: #ffffff;
-  padding: 1.2rem 0;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.4);
+  background-color: var(--albastru-petrol);
+  color: var(--alb);
+  padding: 1.5rem 0;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .logo-symbol {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  background-color: var(--verde-inchis);
+  color: var(--alb);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-titlu);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
+}
+
+.logo-text h1 {
+  font-family: var(--font-titlu);
+  font-size: 36px;
+  color: var(--alb);
 }
 
 .header-subtitle {
   font-family: var(--font-subtitlu);
-  font-size: 26px;
-  line-height: 1.4;
-  color: #ffffff;
-  font-weight: 600;
+  font-size: 22px;
+  color: var(--alb);
+  opacity: 0.9;
   margin-top: 0.3rem;
-  max-width: 500px;
 }
 
 nav ul {
@@ -151,19 +153,21 @@ nav a.active {
    ------------------------------ */
 
 .hero {
-  background-color: var(--bej-cald);
+  background-color: var(--crem-cald);
   padding: 4rem 0;
 }
 
 .hero-inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .hero-text h2 {
-  font-size: 42px;
+  font-family: var(--font-titlu);
+  font-size: 46px;
+  color: var(--albastru-petrol);
   margin-bottom: 1rem;
 }
 
@@ -171,10 +175,9 @@ nav a.active {
   font-family: var(--font-subtitlu);
   font-size: 26px;
   line-height: 1.6;
-  font-weight: 600;
-  color: var(--bleumarin-profund);
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
 }
+
 
 /* BUTOANE */
 
@@ -188,11 +191,11 @@ nav a.active {
   transition: 0.2s ease;
 }
 
-/* Buton principal */
+/* Buton galben */
 .btn-primary {
-  background-color: var(--auriu-pal);
-  color: var(--bleumarin-profund);
-  border: 3px solid var(--auriu-pal);
+  background-color: var(--galben-mustar);
+  color: var(--albastru-petrol);
+  border: 3px solid var(--galben-mustar);
 }
 
 .btn-primary:hover {
@@ -202,13 +205,14 @@ nav a.active {
 /* Buton contur */
 .btn-outline {
   background-color: transparent;
-  border: 3px solid var(--bleumarin-profund);
-  color: var(--bleumarin-profund);
+  border: 3px solid var(--albastru-petrol);
+  color: var(--albastru-petrol);
 }
 
 .btn-outline:hover {
   background-color: rgba(11, 60, 73, 0.08);
 }
+
 
 /* ------------------------------
    5. SECȚIUNI GENERALE
@@ -219,23 +223,17 @@ nav a.active {
 }
 
 .section-light {
-  background-color: var(--bej-cald);
+  background-color: var(--crem-cald);
 }
 
 .section-alt {
-  background-color: #ffffff;
+  background-color: var(--alb);
 }
 
 .section-title {
   font-family: var(--font-titlu);
-  font-size: 38px;
-  color: var(--bleumarin-profund);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.section-subtitle {
-  font-family: var(--font-subtitlu);
+  font-size: 40px;
+  color: var(--albastru-petrol);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -243,7 +241,6 @@ nav a.active {
 /* ------------------------------
    6. CARDURI & GRID
    ------------------------------ */
-
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -251,10 +248,10 @@ nav a.active {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--alb);
   border-radius: 14px;
   padding: 1.6rem;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 3px solid var(--galben-mustar);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
   font-size: 22px;
   line-height: 1.6;
@@ -262,8 +259,10 @@ nav a.active {
 
 .card h4 {
   font-family: var(--font-subtitlu);
+  color: var(--verde-inchis);
   margin-bottom: 0.8rem;
 }
+
 
 /* ------------------------------
    7. PAGINA INTERPRETARE ANALIZE
@@ -291,10 +290,10 @@ nav a.active {
    ------------------------------ */
 
 .contact-form {
-  background-color: #ffffff;
+  background-color: var(--alb);
   padding: 2rem;
   border-radius: 14px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 3px solid var(--galben-mustar);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -337,10 +336,12 @@ nav a.active {
    ------------------------------ */
 
 .site-footer {
-  background-color: var(--bleumarin-profund);
-  color: #ffffff;
+  background-color: var(--albastru-petrol);
+  color: var(--alb);
   padding: 2rem 0;
   margin-top: 3rem;
+  text-align: center;
+  font-size: 20px;
 }
 
 .footer-inner {
