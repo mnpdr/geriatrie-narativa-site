@@ -3,105 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicii online – Geriatrie Narativă</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Servicii online</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf7f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #e8dfd3;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header a {
+            margin: 0 10px;
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1, h2 {
+            color: #5a4636;
+            text-align: center;
+        }
+
+        p {
+            color: #6b5b4a;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            color: #5a4636;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .servicii-viitoare {
+            background-color: #f2ece6;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Acasă</a></li>
-            <li><a href="despre.html">Despre</a></li>
-            <li><a href="servicii-online.html" class="active">Servicii online</a></li>
-            <li><a href="programari-online.html">Programări</a></li>
-            <li><a href="evaluare-cadere.html">Evaluarea riscului de cădere</a></li>
-            <li><a href="articole.html">Articole</a></li>
-            <li><a href="faq.html">Întrebări frecvente</a></li>
-            <li><a href="tarife.html">Tarife</a></li>
-        </ul>
-    </nav>
+    <a href="index.html">Acasă</a>
+    <a href="servicii-online.html">Servicii online</a>
+    <a href="contact.html">Contact</a>
+    <a href="newsletter.html">Newsletter</a>
 </header>
 
-<main class="container">
+<div class="container">
 
-    <section class="hero">
-        <h1>Servicii online</h1>
-        <p class="intro">
-            Lucrez la dezvoltarea unor servicii online care să ofere sprijin rapid și accesibil
-            familiilor și pacienților vârstnici. Aceste servicii vor completa consultațiile la cabinet
-            și vor putea fi accesate în siguranță, de acasă.
-        </p>
-    </section>
+    <h1>Servicii online</h1>
 
-    <section>
-        <h2>Servicii online în pregătire</h2>
+    <p style="text-align:center; max-width:700px; margin:0 auto 40px;">
+        În acest moment, serviciile online sunt în curs de dezvoltare. Lucrez la resurse și opțiuni
+        care să ofere aparținătorilor sprijin clar, accesibil și adaptat nevoilor persoanelor vârstnice.
+        Multe dintre aceste teme vor fi abordate și în newsletter, în articole scurte și ușor de aplicat.
+    </p>
 
-        <article class="service-future">
-            <h3>Interpretare analize medicale</h3>
-            <p>
-                Trimiterea analizelor în format digital, urmată de o discuție clară și adaptată
-                nivelului de înțelegere al pacientului și al familiei.
-            </p>
-        </article>
+    <!-- SECȚIUNEA UNICĂ: Servicii online – în pregătire -->
+    <section class="servicii-viitoare">
+        <h2>Servicii online – în pregătire</h2>
 
-        <article class="service-future">
-            <h3>Consiliere pentru aparținători</h3>
-            <p>
-                Sesiuni online dedicate persoanelor care îngrijesc pacienți vârstnici, cu îndrumare
-                privind comunicarea, organizarea îngrijirii și prevenirea epuizării.
-            </p>
-        </article>
+        <ul style="max-width: 700px; margin: 0 auto;">
 
-        <article class="service-future">
-            <h3>Evaluări digitale și chestionare structurate</h3>
-            <p>
-                Instrumente online care ajută la colectarea informațiilor relevante înainte de
-                consultație (de exemplu, evaluarea riscului de cădere).
-            </p>
-        </article>
+            <li>Discuții online cu aparținători pe teme geriatrice:
+                <ul>
+                    <li>îngrijirea pacientului imobilizat</li>
+                    <li>prevenirea escarelor</li>
+                    <li>prevenirea căderilor în casă</li>
+                    <li>adaptarea mediului pentru siguranță</li>
+                    <li>comunicarea cu persoane cu demență sau afazie</li>
+                    <li>nutriția la vârstnic</li>
+                    <li>suplimente alimentare la vârstnic</li>
+                    <li>sarcopenia și prevenirea pierderii masei musculare</li>
+                </ul>
+            </li>
 
-        <p class="note">
-            Aceste servicii sunt în curs de dezvoltare și vor fi lansate treptat, astfel încât să
-            rămână sigure, etice și adaptate nevoilor persoanelor vârstnice.
-        </p>
-    </section>
+            <li style="margin-top:20px;">Materiale logopedice personalizate:
+                <ul>
+                    <li>fișe PDF adaptate nivelului cognitiv</li>
+                    <li>exerciții pentru memorie, limbaj, atenție</li>
+                    <li>adaptări pentru afazie, demență, dificultăți de comunicare</li>
+                </ul>
+            </li>
 
-    <section class="newsletter">
-        <h2>Abonare la newsletter</h2>
-        <p>
-            Dacă doriți să fiți anunțați când devin disponibile serviciile online, vă puteți abona
-            la newsletter-ul meu. Veți primi ocazional informații utile despre:
-        </p>
-
-        <ul>
-            <li>îngrijirea persoanelor vârstnice</li>
-            <li>prevenirea căderilor</li>
-            <li>adaptarea locuinței pentru siguranță</li>
-            <li>comunicarea cu pacienții cu demență</li>
-            <li>noutăți despre serviciile mele</li>
+            <li style="margin-top:20px;">Interpretarea analizelor medicale (informativ, nu diagnostic)</li>
+            <li>Resurse digitale pentru aparținători</li>
+            <li>Ghiduri practice pentru îngrijirea seniorilor</li>
         </ul>
-
-        <div class="newsletter-form-wrapper">
-            <!-- AICI INSERI FORMULARUL JOTFORM DE NEWSLETTER -->
-            <!-- Exemplu:
-            <script type="text/javascript" src="https://form.jotform.com/jsform/ID_FORMULAR_NEWSLETTER"></script>
-            -->
-            <a class="btn" href="#newsletter-form">Mă abonez</a>
-        </div>
-
-        <p class="gdpr-text">
-            Prin abonare, sunt de acord să primesc emailuri ocazionale cu informații utile și noutăți
-            despre serviciile oferite. Mă pot dezabona oricând.
-        </p>
     </section>
 
-</main>
-
-<footer>
-    <p>&copy; 2025 Geriatrie Narativă — Dr. Paula</p>
-</footer>
+</div>
 
 </body>
 </html>
