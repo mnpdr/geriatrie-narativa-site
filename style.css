@@ -379,3 +379,27 @@ nav a.active {
   h2 { font-size: 30px; }
   h3 { font-size: 26px; }
 }
+/* --- Corectare carduri rupte / text trunchiat --- */
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* IMPORTANT: oprește întinderea forțată */
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.card h4,
+.card p {
+  white-space: normal !important; /* permite textului să curgă natural */
+  word-break: break-word; /* previne ruperea ciudată */
+}
+
+.card p {
+  line-height: 1.5;
+}
