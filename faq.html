@@ -5,6 +5,65 @@
   <title>Întrebări frecvente (FAQ) – Geriatrie & Gerontologie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* ACORDEON – stil complet integrat */
+
+    .accordion {
+      max-width: 900px;
+      margin: 0 auto;
+      font-family: "Arial", sans-serif;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .accordion-header {
+      width: 100%;
+      background: #f7f7f7; /* gri cald */
+      border: none;
+      padding: 18px 20px;
+      text-align: left;
+      font-size: 1.25rem; /* font mărit */
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #333;
+    }
+
+    .accordion-header:hover {
+      background: #ececec;
+    }
+
+    .accordion-header .icon {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #666;
+      transition: transform 0.2s ease;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 18px 20px;
+      background: #fff;
+      font-size: 1.15rem; /* font mărit */
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .accordion-item.open .accordion-content {
+      display: block;
+    }
+
+    .accordion-item.open .icon {
+      transform: rotate(180deg);
+      color: #444;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -28,6 +87,7 @@
         <li><a href="interpretare-analize.html">Interpretare analize</a></li>
         <li><a href="articole.html">Articole</a></li>
         <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="tarife.html">Tarife</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </nav>
@@ -46,5 +106,113 @@
 <section class="section section-light">
   <div class="container">
 
-    <div class="card" style="margin-bottom:1.5rem;">
-      <h4>1. Ce este evaluarea geriatrică globală?
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Consultația gratuită</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Consultația gratuită se oferă doar la cabinet, pe baza unei trimiteri de la medicul de familie sau de la un medic specialist. În cadrul acestei consultații realizăm împreună o discuție detaliată despre istoricul dumneavoastră (anamneză), o evaluare clinică atentă și recomandări pentru investigații care pot fi decontate de către Casa de Asigurări de Sănătate. Scopul este să înțeleg cât mai bine situația dumneavoastră și să vă ofer îndrumarea potrivită, într-un cadru profesionist și prietenos.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Ce include interpretarea analizelor?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Primesc rezultatele dumneavoastră, le analizez cu atenție și vă explic pe înțelesul tuturor ce înseamnă valorile, ce este important și ce pași puteți urma în continuare. Scopul este să clarificăm împreună informațiile medicale, astfel încât să vă simțiți în siguranță și bine orientați.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Ce NU include interpretarea analizelor?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Interpretarea analizelor nu înlocuiește o consultație medicală completă. Nu pot oferi prescripții sau un plan terapeutic complet doar pe baza analizelor trimise online. Pentru recomandări personalizate și tratament este necesară o evaluare clinică directă.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Evaluarea extinsă</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Evaluarea extinsă este o discuție detaliată, în care analizăm împreună riscurile, dificultățile și nevoile dumneavoastră. Aceasta ne ajută să înțelegem mai bine situația și să găsim soluții potrivite, adaptate fiecărei persoane.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Consilierea pentru familie</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Ofer sprijin și explicații pentru aparținători, astfel încât îngrijirea persoanei dragi să fie mai clară, mai ușoară și mai sigură. Familia primește recomandări practice și informații utile pentru a gestiona situațiile de zi cu zi.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Planul de tratament — doar la cabinet</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Planul de tratament complet se stabilește doar în cadrul consultațiilor la cabinet, unde evaluarea este directă și completă. Online putem discuta, clarifica și orienta, dar nu putem construi un plan terapeutic complet fără examinare clinică.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Facturare</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Factura este emisă electronic și trimisă pe email, pentru a fi ușor de păstrat și accesat. Procesul este simplu, transparent și adaptat nevoilor dumneavoastră.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Geriatrie & Gerontologie – Toate drepturile rezervate</p>
+  </div>
+</footer>
+
+<!-- ACORDEON JS -->
+<script>
+  const items = document.querySelectorAll(".accordion-item");
+
+  items.forEach(item => {
+    const header = item.querySelector(".accordion-header");
+    const icon = item.querySelector(".icon");
+
+    header.addEventListener("click", () => {
+      const isOpen = item.classList.contains("open");
+
+      items.forEach(i => {
+        i.classList.remove("open");
+        i.querySelector(".icon").textContent = "+";
+      });
+
+      if (!isOpen) {
+        item.classList.add("open");
+        icon.textContent = "–";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
