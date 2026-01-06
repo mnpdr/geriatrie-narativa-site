@@ -457,4 +457,19 @@ nav a.active {
 
 .section-light .container {
   max-width: 900px;
+
+}
+/* --- Corectare butoane suprapuse în HERO pe mobil --- */
+@media (max-width: 600px) {
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+  }
 }
