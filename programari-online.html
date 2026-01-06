@@ -23,7 +23,6 @@
     <nav>
       <ul>
         <li><a href="index.html">Acasă</a></li>
-        <li><a href="servicii-online.html">Servicii online</a></li>
         <li><a href="programari-online.html" class="active">Programări online</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul>
@@ -36,8 +35,8 @@
   <div class="container">
     <h2 class="page-title">Programări online</h2>
     <p class="page-subtitle">
-      Puteți alege o programare la cabinet sau un serviciu online, în funcție de nevoile dumneavoastră.  
-      La cabinet sunt primiți cu drag și pacienți din județele apropiate, cu confirmare prealabilă.
+      Vă mulțumesc pentru încrederea de a apela la serviciile mele.  
+      Completarea formularului de mai jos îmi permite să vă ofer o programare potrivită nevoilor dumneavoastră, într-un mod cât mai clar și confortabil.
     </p>
   </div>
 </section>
@@ -48,91 +47,27 @@
 
     <h3 style="margin-bottom:1.5rem;">Formular de programare</h3>
 
-    <form class="contact-form">
+    <!-- FORMULAR JOTFORM -->
+    <script type="text/javascript" src="https://form.jotform.com/jsform/260046488027054"></script>
 
-      <label>Nume și prenume</label>
-      <input type="text" placeholder="Introduceți numele" required />
-
-      <label>Telefon</label>
-      <input type="tel" placeholder="Număr de telefon" required />
-
-      <label>E-mail</label>
-      <input type="email" placeholder="exemplu@domeniu.ro" required />
-
-      <label>Tipul programării</label>
-      <select required>
-        <option>Consultație la cabinet</option>
-        <option>Interpretare analize online</option>
-        <option>Evaluare risc de cădere (simplă)</option>
-        <option>Evaluare extinsă risc de cădere (online, contra cost)</option>
-        <option>Consiliere pentru familie (online)</option>
-        <option>Întrebare medicală punctuală (online)</option>
-      </select>
-
-      <label>Preferință pentru zi / interval orar</label>
-      <input type="text" placeholder="Ex: Luni sau Marți, între 10:00–14:00" />
-
-      <label>Mesaj suplimentar</label>
-      <textarea placeholder="Scrieți detalii utile pentru programare"></textarea>
-
-      <button type="submit" class="btn-primary">Trimite solicitarea</button>
-    </form>
-
-    <!-- MESAJ DE CONFIRMARE -->
-    <p id="confirmare" style="
-      display:none;
-      margin-top:1.5rem;
-      padding:1rem;
-      background:#e8f5e9;
-      border-left:4px solid #4caf50;
-      border-radius:4px;
-      font-size:1.05rem;
-      line-height:1.6;
-    ">
-      Solicitarea dumneavoastră a fost trimisă cu succes.  
-      Vă vom contacta în cel mai scurt timp pentru confirmare.  
-      Vă mulțumim pentru încredere.
-    </p>
-
-    <p class="gdpr-note">
+    <p class="gdpr-note" style="margin-top:1.5rem;">
       Prin trimiterea formularului, sunteți de acord ca datele furnizate să fie folosite pentru a vă contacta în vederea programării.
     </p>
 
   </div>
 </section>
 
-<!-- ALTE SERVICII ONLINE -->
+<!-- CE SE ÎNTÂMPLĂ DUPĂ TRIMITERE -->
 <section class="section section-alt">
   <div class="container">
-    <h3 class="section-title">Servicii disponibile</h3>
+    <h3 class="section-title">Ce se întâmplă după trimiterea formularului</h3>
 
-    <div class="cards">
-
-      <div class="card">
-        <h4>Interpretare analize online</h4>
-        <p>Trimiteți analizele și primiți o interpretare clară în 24–48h.</p>
-        <a href="interpretare-analize.html" class="btn-outline">Detalii</a>
-      </div>
-
-      <div class="card">
-        <h4>Evaluare risc de cădere (simplă)</h4>
-        <p>Chestionar rapid pentru identificarea factorilor de risc.</p>
-        <a href="evaluare-cadere.html" class="btn-outline">Completează</a>
-      </div>
-
-      <div class="card">
-        <h4>Evaluare extinsă risc de cădere</h4>
-        <p>Chestionar detaliat, interpretare contra cost în 24–48h.</p>
-        <a href="evaluare-cadere-extinsa.html" class="btn-outline">Completează</a>
-      </div>
-
-      <div class="card">
-        <h4>Consiliere pentru familie (online)</h4>
-        <p>Sprijin pentru îngrijirea persoanelor vârstnice, prin videoconferință.</p>
-        <a href="index.html#contact" class="btn-outline">Programează</a>
-      </div>
-
-    </div>
+    <ul class="steps-list" style="line-height:1.7; font-size:1.1rem; max-width:700px; margin:auto;">
+      <li><strong>1. Primiți un mesaj automat</strong> care confirmă că solicitarea a fost înregistrată.</li>
+      <li><strong>2. Analizez solicitarea</strong> și verific disponibilitatea în funcție de preferințele indicate.</li>
+      <li><strong>3. Vă trimit un răspuns personalizat</strong> prin e-mail: fie confirmarea programării, fie o propunere alternativă.</li>
+      <li><strong>4. Programarea devine fermă</strong> doar după confirmarea finală din partea mea.</li>
+    </ul>
   </div>
 </section>
 
@@ -145,16 +80,6 @@
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-
-  const form = document.querySelector(".contact-form");
-  const confirmare = document.getElementById("confirmare");
-
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    confirmare.style.display = "block";
-    form.reset();
-    window.scrollTo({ top: form.offsetTop - 100, behavior: "smooth" });
-  });
 </script>
 
 </body>

@@ -69,29 +69,60 @@
 <body>
 
 <!-- HEADER -->
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="logo-area">
-      <div class="logo-symbol">G</div>
-      <div class="logo-text">
-        <h1>Geriatria și Gerontologia</h1>
-        <p class="header-subtitle">îngrijire cu suflet și înțelegere</p>
-      </div>
-    </div>
+<header style="
+    background-color: #e8dfd3;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #d6c8b8;
+">
+    <nav style="
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    ">
+        <a href="index.html" style="
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        ">Acasă</a>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="index.html#despre-noi">Despre noi</a></li>
-        <li><a href="index.html#servicii">Servicii</a></li>
-        <li><a href="interpretare-analize.html">Interpretare analize</a></li>
-        <li><a href="articole.html">Articole</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-        <li><a href="tarife.html">Tarife</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
+        <a href="servicii-online.html" style="
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        ">Servicii online</a>
+
+        <a href="resurse.html" style="
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        ">Resurse</a>
+
+        <a href="faq.html" style="
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        ">Întrebări frecvente</a>
+
+        <a href="contact.html" style="
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        ">Contact</a>
+
+        <a href="newsletter.html" style="
+            color: #5a4636;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        ">Newsletter</a>
     </nav>
-  </div>
 </header>
 
 <!-- HERO -->
@@ -104,10 +135,11 @@
 
 <!-- FAQ -->
 <section class="section section-light">
-  <div class="container">
+  <div class="container" style="max-width: 900px; margin: 0 auto;">
 
     <div class="accordion">
 
+      <!-- 1. Consultația gratuită -->
       <div class="accordion-item">
         <button class="accordion-header">
           <span>Consultația gratuită</span>
@@ -118,26 +150,7 @@
         </div>
       </div>
 
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>Ce include interpretarea analizelor?</span>
-          <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Primesc rezultatele dumneavoastră, le analizez cu atenție și vă explic pe înțelesul tuturor ce înseamnă valorile, ce este important și ce pași puteți urma în continuare. Scopul este să clarificăm împreună informațiile medicale, astfel încât să vă simțiți în siguranță și bine orientați.</p>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>Ce NU include interpretarea analizelor?</span>
-          <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Interpretarea analizelor nu înlocuiește o consultație medicală completă. Nu pot oferi prescripții sau un plan terapeutic complet doar pe baza analizelor trimise online. Pentru recomandări personalizate și tratament este necesară o evaluare clinică directă.</p>
-        </div>
-      </div>
-
+      <!-- 2. Evaluarea extinsă -->
       <div class="accordion-item">
         <button class="accordion-header">
           <span>Evaluarea extinsă</span>
@@ -148,6 +161,39 @@
         </div>
       </div>
 
+	<div class="accordion-item">
+	  <button class="accordion-header">
+        <span>Ce teste se folosesc pentru tulburările de memorie?</span>
+        <span class="icon">+</span>
+      </button>
+     <div class="accordion-content">
+      <p>În evaluarea tulburărilor de memorie folosesc teste simple, blânde și adaptate vârstei, care mă ajută să înțeleg cum funcționează memoria, atenția și orientarea. Aceste teste nu sunt examene, ci instrumente prin care descoperim împreună ce funcționează bine și unde pot apărea dificultăți. Rezultatele ne ajută să stabilim pașii următori și să găsim soluții potrivite pentru fiecare persoană.</p>
+     </div>
+    </div>
+
+      <!-- 3. Cât durează o evaluare? (nou) -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Cât durează o evaluare?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>O evaluare completă durează, în general, între 45 și 60 de minute. În acest timp discutăm pe îndelete istoricul medical, tratamentele, dificultățile actuale și obiectivele dumneavoastră. Dacă este nevoie de teste suplimentare sau de o discuție mai detaliată, putem extinde timpul astfel încât totul să fie clar și bine înțeles.</p>
+        </div>
+      </div>
+
+      <!-- 4. Pot veni cu un aparținător? (nou) -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Pot veni cu un aparținător?</span>
+          <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Da, desigur. Este chiar recomandat ca un aparținător să fie prezent, mai ales dacă există probleme de memorie, dificultăți de comunicare sau situații medicale complexe. Prezența unei persoane de încredere ajută la o înțelegere mai clară a situației, la completarea informațiilor și la stabilirea unui plan de îngrijire potrivit. Împreună putem lua cele mai bune decizii.</p>
+        </div>
+      </div>
+
+      <!-- 5. Consilierea pentru familie -->
       <div class="accordion-item">
         <button class="accordion-header">
           <span>Consilierea pentru familie</span>
@@ -158,6 +204,7 @@
         </div>
       </div>
 
+      <!-- 6. Planul de tratament -->
       <div class="accordion-item">
         <button class="accordion-header">
           <span>Planul de tratament — doar la cabinet</span>
@@ -165,16 +212,6 @@
         </button>
         <div class="accordion-content">
           <p>Planul de tratament complet se stabilește doar în cadrul consultațiilor la cabinet, unde evaluarea este directă și completă. Online putem discuta, clarifica și orienta, dar nu putem construi un plan terapeutic complet fără examinare clinică.</p>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <button class="accordion-header">
-          <span>Facturare</span>
-          <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Factura este emisă electronic și trimisă pe email, pentru a fi ușor de păstrat și accesat. Procesul este simplu, transparent și adaptat nevoilor dumneavoastră.</p>
         </div>
       </div>
 
