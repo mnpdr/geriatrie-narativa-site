@@ -459,7 +459,6 @@ nav a.active {
   max-width: 900px;
 
 }
-/* --- Corectare butoane suprapuse în HERO pe mobil --- */
 @media (max-width: 600px) {
   .hero-actions {
     display: flex;
@@ -471,6 +470,8 @@ nav a.active {
   .hero-actions a {
     width: 100%;
     text-align: center;
+    display: block;
   }
 }
+
 
