@@ -461,17 +461,16 @@ nav a.active {
 }
 @media (max-width: 600px) {
   .hero-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
   }
 
   .hero-actions a {
-    width: 100%;
-    text-align: center;
-    display: block;
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
   }
 }
-
 
