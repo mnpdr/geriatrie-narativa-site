@@ -1,52 +1,14 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abonare la newsletter</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #faf7f2;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            color: #5a4636;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-
-        p.intro {
-            text-align: center;
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            color: #6b5b4a;
-        }
-
-        .form-wrapper {
-            background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Newsletter – Geriatrie & Gerontologie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- HEADER NOU -->
 <header style="
     background-color: #e8dfd3;
     padding: 15px 20px;
@@ -65,13 +27,6 @@
             font-weight: bold;
             font-size: 1.1rem;
         ">Acasă</a>
-
-        <a href="servicii-online.html" style="
-            color: #5a4636;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-        ">Servicii online</a>
 
         <a href="resurse.html" style="
             color: #5a4636;
@@ -103,19 +58,36 @@
     </nav>
 </header>
 
-<div class="container">
-    <h1>Abonare la newsletter</h1>
+<section class="section section-light">
+  <div class="container" style="max-width:700px; margin:auto; text-align:center;">
 
-    <p class="intro">
-        Înscrie-te pentru a primi informații utile despre îngrijirea persoanelor vârstnice,
-        exerciții logopedice adaptate și noutăți despre serviciile mele.
+    <h2 class="section-title">Abonare la newsletter</h2>
+
+    <p style="margin-bottom:2rem; font-size:1.15rem; line-height:1.6;">
+      Vă invit cu drag să vă abonați pentru a primi informații utile și noutăți.
+      Trimit doar mesaje relevante, pe înțelesul tuturor, despre îngrijirea vârstnicilor,
+      prevenirea căderilor, memorie, nutriție și sprijin pentru familie.
     </p>
 
-    <div class="form-wrapper">
-        <script type="text/javascript" src="https://form.jotform.com/jsform/260045215921044"></script>
-    </div>
+    <!-- FORMULAR JOTFORM NEWSLETTER -->
+    <script type="text/javascript" src="https://form.jotform.com/jsform/260045215921044"></script>
 
-</div>
+    <p class="gdpr-note" style="margin-top:1.5rem; font-size:0.95rem; color:#5a4636;">
+      Prin abonare, sunteți de acord să primiți ocazional informații și resurse utile prin e-mail.
+    </p>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Geriatrie &amp; Gerontologie – Îngrijire cu suflet.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
